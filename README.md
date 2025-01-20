@@ -1,50 +1,39 @@
-# Welcome to your Expo app 👋
+# 트렌드 큐레이션 앱 - 프론트엔드
+## React Native와 Expo를 사용하여 개발된 트렌드 큐레이션 앱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+### 소개
+- 모바일시스템공학과 4-1 겨울 계절학기 수업
+- 오픈소스SW활용 팀 프로젝트
+- 개발 기간 : 2024.12.31 ~ 2022.1.14
 
-## Get started
+### 📋 프로젝트 목표
+- 특정 상황에서 상대방에게 설레는 감정을 느낄 때, 심박수가 일정 기준 이상 상승하면 푸쉬 알림을 통해 이를 사용자에게 전달하는 시스템 개발.
 
-1. Install dependencies
+### 🛠️ 기술 스택
+- React Native: UI 개발
+- Expo: 앱 빌드 및 실행 환경
+- Ionicons: 아이콘 표시
+- React Navigation: 화면 간 네비게이션
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 🖥️ 주요 기능
+#### 로그인 화면 
+- 로그인 기능
+- 계정이 없을 시 회원가입 버튼을 누르면 회원가입 화면으로 이동
+#### 회원가입 화면
+- 계정 등록
+- 계정이 등록되면 자동으로 로그인 화면으로 이동
+#### 메인 화면 (newsscreen)
+- 스크롤 가능한 15개의 뉴스 아이템
+- 각 아이템 우측에 별표 아이콘(스크랩 버튼)이 있으며, 클릭 시 색상이 회색 ↔ 노란색으로 전환
+- 아이템을 클릭하면 지정된 뉴스 링크로 이동
+- 하단 네비게이션 바를 통해 다른 화면으로 이동
+#### 화면 2 (snsscreen)
+- 스크롤 가능한 15개의 YouTube 동영상 아이템
+- 아이템을 클릭하면 지정된 YouTube 링크로 이동
+- 메인 화면 기능과 동일
+#### 화면 3 (scrapscreen)
+- 몇 개의 아이템과 쓰레기통 아이콘
+- 쓰레기통 아이콘 클릭 시 해당 아이템 삭제
+- 하단 네비게이션 바를 통해 다른 화면으로 이동
+#### 하단 네비게이션 바
+- 각 화면 간 이동을 지원
